@@ -1,0 +1,15 @@
+{
+  "name": "vue-admin-systemjs-demo",
+  "version": "0.1.0",
+  "description": "vue+systemjs+typescript demo,build the admin spa page ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "systemjs-plugin-css": "^0.1.32",
+    "systemjs-plugin-text": "0.0.9"
+  }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>vue-admin-systemjs-demo</title>
+  <style>
+  body{
+    margin:0;
+  }
+    #menu{
+      width:230px;
+      float:left;
+    }
+    .right{
+      margin-left:230px;
+    }
+
+    .tab{
+     display: inline-block;
+     width:100px;
+     border:1px solid gray;
+     border-bottom-width: 0;
+     margin-top:5px;
+     margin-right:5px;
+     padding:5px;
+    }
+  </style>
+</head>
+
+<body>
+   <div id="menu">
+    <div v-for="menu in menus" @click="createTab(menu)">
+      {{menu.name}}
+    </div>
+  </div>
+  <div class="right">
+    <div id="tabs" class="tabs">
+      <div class="tab" v-for="tab in tabs">
+        {{tab.name}}
+      </div>
+    </div>
+    <div id="panels">
+
+    </div>
+
+  </div>
+  <script src="lib/system-production.js"></script>
+  <script src="lib/vue.js"></script>
+  <script src="./app/main.js"></script>
+</body>
+
+</html>
+
